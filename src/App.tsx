@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import About from './components/About';
+import Generator from './components/Generator';
 
-function App() {
+import './App.scss';
+import wavy_border from './resources/images/wave-border.svg';
+
+const App : React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>dillopass</h1>
+        <span>Generate Strong Passwords!</span>
       </header>
-    </div>
-  );
-}
 
+      <img className = "wave-border" src = {wavy_border} alt = ""/>
+
+      <div id = "wrapper">
+        <Generator />
+        <About />
+      </div>
+      <footer>
+        <p>&copy; dillopass 2020</p>
+      </footer>
+    </div>
+  )
+}
 export default App;

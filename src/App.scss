@@ -1,0 +1,87 @@
+// Global definitions
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family : 'rails';
+  src : url('./resources/fonts/Raleway-Regular.ttf')
+}
+$theme-colors : (
+  blueish : #0099ff,
+  yellowish : #ffe277,
+  orangeish : #ffb367,
+  creamish : #ffe2bc
+  );
+
+$spacing : (
+  space-1 : 0.5rem,
+  space-2 : 1.0rem,
+  space-3 : 1.5rem,
+  space-4 : 2.0rem,
+  space-5 : 2.5rem,
+  max : 5rem
+);
+
+.background-center {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+// Main Page
+header {
+  background: map-get($theme-colors, blueish);
+  padding: map-get($spacing, space-3);
+  color: white;
+  text-align: center;
+  h1 {
+    font-size: 250%;
+    font-family: 'rails', sans-serif;
+  }
+  span {
+    font-weight: bold;
+    font-family: 'Helvetica';
+  }
+}
+
+// About Component
+#about-wrapper {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: map-get($spacing, max);
+
+  .about-heading {
+    font-family: 'rails', sans-serif;
+    text-align: center;
+    background: map-get($theme-colors, orangeish);
+    border-radius: 4px;
+    color: white;
+  }
+  p {
+    background: map-get($theme-colors, creamish);
+    padding: 1em;
+    line-height: map-get($spacing, space-3);
+    text-align: left;
+    margin-top: map-get($spacing, space-2);
+    font-family: 'Helvetica';
+  }
+
+}
+
+// Generator
+#generator-wrapper {
+  text-align: center;
+  margin-bottom: map-get($spacing, space-2);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width:  100%;
+  text-align: center;
+  color: white;
+  padding: map-get($spacing, space-2);
+  background: map-get($theme-colors, blueish);
+}
