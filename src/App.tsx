@@ -4,6 +4,7 @@ import Generator from './components/Generator';
 
 import './App.scss';
 import wavy_border from './resources/images/wave-border.svg';
+import logo from './resources/images/logo2.png';
 
 const App : React.FC = () => {
   return (
@@ -14,6 +15,8 @@ const App : React.FC = () => {
       </header>
 
       <img className = "wave-border" src = {wavy_border} alt = ""/>
+
+      <img className = "logo" src = {logo} alt = "logo"/>
 
       <div id = "wrapper">
         <Generator />
