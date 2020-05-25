@@ -1,4 +1,4 @@
-# Dillopass
+# Dillopass :rocket:
 <p>A password generator built with React/Typescript</p>
 
 # Tools
