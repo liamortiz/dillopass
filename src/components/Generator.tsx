@@ -16,16 +16,16 @@ class Generator extends Component<{}, IState> {
     let value : string = event.target.value;
     this.setState({password : value});
   }
-
   copyText = () : void => {
     (document.getElementById('password') as HTMLInputElement).select();
     document.execCommand("copy");
   }
-  generatePassword = (type : string) : void => {
-    let new_password : string = "Build the actual mechanics."
-    this.setState({password : new_password})
-  }
+  getStrongPassword = () : void => {
 
+  }
+  getWeakPassword = () : void => {
+
+  }
   render() {
     return (
       <div id = "generator-wrapper">
@@ -34,8 +34,8 @@ class Generator extends Component<{}, IState> {
           <img src = {copy_icon} onClick = {this.copyText} alt = "copy"/>
         </div>
         <div className = "button-wrapper">
-          <button onClick = {() => this.generatePassword('weak')}>Weak <span>password</span></button>
-          <button onClick = {() => this.generatePassword('strong')}>Strong <span>password</span></button>
+          <button onClick = {this.getWeakPassword}>Weak <span>password</span></button>
+          <button onClick = {this.getStrongPassword}>Strong <span>password</span></button>
         </div>
       </div>
     )

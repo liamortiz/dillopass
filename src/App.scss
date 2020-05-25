@@ -3,16 +3,17 @@
   margin: 0;
   padding: 0;
 }
+.App {
+  min-width: 400px;
+}
 @font-face {
   font-family : 'rails';
   src : url('./resources/fonts/Raleway-Regular.ttf')
 }
 $theme-colors : (
   blueish : #0099ff,
-  yellowish : #ffe277,
   orangeish : #ffb367,
   creamish : #ffe2bc,
-  grayish : gray,
   blackish : rgba(0, 0, 0, 0.9)
   );
 

@@ -4,7 +4,7 @@ import Generator from './components/Generator';
 
 import './App.scss';
 import wavy_border from './resources/images/wave-border.svg';
-import logo from './resources/images/logo2.png';
+import logo from './resources/images/logo.png';
 
 // TODO: Fix footer being sticky
 
@@ -13,7 +13,7 @@ const App : React.FC = () => {
     <div className="App">
       <header>
         <h1>dillopass</h1>
-        <span>Generate Strong Passwords!</span>
+        <span>Generate memorable Passwords!</span>
       </header>
 
       <img className = "wave-border" src = {wavy_border} alt = ""/>
