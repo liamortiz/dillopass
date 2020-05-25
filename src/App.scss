@@ -11,7 +11,9 @@ $theme-colors : (
   blueish : #0099ff,
   yellowish : #ffe277,
   orangeish : #ffb367,
-  creamish : #ffe2bc
+  creamish : #ffe2bc,
+  grayish : gray,
+  blackish : rgba(0, 0, 0, 0.9)
   );
 
 $spacing : (
@@ -32,7 +34,7 @@ $spacing : (
 .logo {
   display: block;
   margin: auto;
-  margin-top: -5em;
+  margin-top: -20%;
   margin-bottom: 2em;
 }
 
@@ -60,17 +62,17 @@ header {
   .about-heading {
     font-family: 'rails', sans-serif;
     text-align: center;
-    background: map-get($theme-colors, blueish);
+    background: map-get($theme-colors, blackish);
     border-radius: 4px;
     padding: map-get($spacing, space-2);
     color: white;
   }
   p {
-    color: rgba(0, 0, 0, 0.8);
-    background: map-get($theme-colors, creamish);
-    padding: 1em;
-    line-height: map-get($spacing, space-3);
+    color: black;
     text-align: left;
+    background: map-get($theme-colors, creamish);
+    padding: map-get($spacing, space-3);
+    line-height: map-get($spacing, space-3);
     margin-top: map-get($spacing, space-2);
     font-family: sans-serif;
   }
@@ -88,6 +90,7 @@ header {
     background: map-get($theme-colors, creamish);
     margin: auto;
     position: relative;
+    border-radius: 5px;
     input {
       width: 100%;
       outline: none;
@@ -97,6 +100,7 @@ header {
       font-size: 100%;
       font-family: 'Helvetica';
       font-weight: bold;
+      color: rgba(0, 0, 0, 0.8);
     }
     img {
       position: absolute;
@@ -111,6 +115,7 @@ header {
 
   .button-wrapper {
     margin: map-get($spacing, space-4);
+    margin-bottom: 3em;
     button {
       width: 150px;
       border-radius: 5px;
@@ -137,10 +142,6 @@ header {
 }
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width:  100%;
   text-align: center;
   color: white;
   padding: map-get($spacing, space-2);

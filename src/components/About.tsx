@@ -4,14 +4,16 @@ const About : React.FC = () => {
   return (
     <div id = "about-wrapper">
       <h2 className = "about-heading">
-        About our passwords.
+        How are the passwords generated?
       </h2>
       <p>
-      Pellentesque eleifend lobortis est, nec fermentum mi finibus pulvinar. Aenean ut blandit dolor, ut aliquam mauris. Morbi vehicula mattis purus,
-      at iaculis augue mollis nec. Quisque congue sit amet turpis congue varius. Praesent nec lacinia orci. Mauris non massa dui. Suspendisse sed varius nisi.
-      Praesent sapien lacus, sodales nec dui gravida, porta posuere neque. Etiam vel accumsan quam, sit amet porta enim. In placerat dapibus fermentum.
-      Ut lobortis massa sed turpis commodo malesuada. In tempus erat nibh, condimentum mollis nibh tincidunt ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Sed at bibendum justo. Phasellus pulvinar, tortor ac aliquam tristique, arcu felis ultrices ipsum, sed fringilla lorem mi quis eros. Fusce facilisis tellus vitae vestibulum rhoncus.
+      Everyone has a plumbus in their home. First they take the dingle bop and they smooth it out with a bunch of schleem.
+      The schleem is then...repurposed for later batches. They take the dingle bop and they push it through the grumbo,
+      where the fleeb is rubbed against it. It's important that the fleeb is rubbed, becasue the fleeb has all the fleeb juice.
+
+      They cut the fleeb. There's several hizzards in the way.
+      The blamfs rub against the chumbles, and the...plubis, and grumbo are shaved away.
+      That leaves you with...a regular old password.
       </p>
     </div>
   )

@@ -6,6 +6,8 @@ import './App.scss';
 import wavy_border from './resources/images/wave-border.svg';
 import logo from './resources/images/logo2.png';
 
+// TODO: Fix footer being sticky
+
 const App : React.FC = () => {
   return (
     <div className="App">
