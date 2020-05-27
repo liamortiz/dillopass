@@ -6,18 +6,15 @@ import './App.scss';
 import wavy_border from './resources/images/wave-border.svg';
 import logo from './resources/images/logo.png';
 
-// TODO: Fix footer being sticky
-
 const App : React.FC = () => {
   return (
     <div className="App">
       <header>
         <h1>dillopass</h1>
-        <span>Generate memorable Passwords!</span>
+        <span>Generate Strong Passwords!</span>
       </header>
 
       <img className = "wave-border" src = {wavy_border} alt = ""/>
-
       <img className = "logo" src = {logo} alt = "logo"/>
 
       <div id = "wrapper">
